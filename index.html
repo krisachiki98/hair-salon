@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Lume | Фризьорски салон</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="top" class="hero">
+      <nav class="nav">
+        <div class="logo">Studio Lume</div>
+        <div class="nav-links">
+          <a href="#top">Начало</a>
+          <a href="#services">Услуги</a>
+          <a href="#team">Екип</a>
+          <a href="#prices">Цени</a>
+          <a href="#booking">Запази час</a>
+        </div>
+        <button class="nav-cta" type="button">Онлайн консултация</button>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="hero-kicker">Фризьорство · Маникюр · Педикюр</p>
+          <h1>Красотата е ритуал, не компромис.</h1>
+          <p class="hero-text">
+            Бутиков салон в центъра на града с персонализирани терапии за коса и нокти.
+            От класически стил до смели трансформации — ние работим с внимание към детайла.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#booking">Запази час</a>
+            <a class="button ghost" href="#services">Виж услугите</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p>Днес работим до 20:30</p>
+          <h2>Промо пакет „Грижа“</h2>
+          <p>Подстригване + терапия + маникюр</p>
+          <div class="hero-price">79 лв</div>
+          <span class="hero-note">Важи от понеделник до четвъртък</span>
+        </div>
+      </div>
+      <div class="hero-gallery">
+        <img
+          src="https://images.unsplash.com/photo-1522336284037-91f16a0b1c46?auto=format&fit=crop&w=800&q=80"
+          alt="Жена с прическа в салон"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+          alt="Интериор на салон"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=800&q=80"
+          alt="Маникюр с пастелни цветове"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section id="team" class="section reveal">
+        <div class="section-header">
+          <h2>Търсене на име</h2>
+          <p>Намерете своя специалист по име или умение.</p>
+        </div>
+        <div class="search">
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Например: Мария, колорист, ноктопластика..."
+            aria-label="Търсене на име"
+          />
+          <span id="search-count">5 резултата</span>
+        </div>
+        <div class="card-grid" id="team-grid">
+          <article class="card" data-name="Мария Стоянова" data-tags="колорист балаяж фризьорство">
+            <h3>Мария Стоянова</h3>
+            <p>Главен стилист · Балаяж и корекции на цвят</p>
+          </article>
+          <article class="card" data-name="Елица Георгиева" data-tags="къдрици стил прически">
+            <h3>Елица Георгиева</h3>
+            <p>Специалист по прически · Сватбени и официални визии</p>
+          </article>
+          <article class="card" data-name="Ралица Иванова" data-tags="маникюр гел лак ноктопластика">
+            <h3>Ралица Иванова</h3>
+            <p>Маникюрист · Гел лак и арт дизайн</p>
+          </article>
+          <article class="card" data-name="Десислава Петрова" data-tags="педикюр терапия спа">
+            <h3>Десислава Петрова</h3>
+            <p>Педикюрист · SPA педикюр и медицински грижи</p>
+          </article>
+          <article class="card" data-name="Кристиян Димитров" data-tags="барбър брада фризьорство">
+            <h3>Кристиян Димитров</h3>
+            <p>Барбър · Фейдове и поддръжка на брада</p>
+          </article>
+        </div>
+        <p id="search-empty" class="empty-state" hidden>Няма резултати. Опитайте с друго име.</p>
+      </section>
+
+      <section id="services" class="section reveal">
+        <div class="section-header">
+          <h2>Меню услуги</h2>
+          <p>Маникюр, педикюр и фризьорство с премиум продукти.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80"
+              alt="Маникюр"
+            />
+            <div>
+              <h3>Маникюр</h3>
+              <p>Гел лак, ноктопластика и арт дизайн с дълготраен блясък.</p>
+              <span>от 35 лв</span>
+            </div>
+          </article>
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+              alt="Педикюр"
+            />
+            <div>
+              <h3>Педикюр</h3>
+              <p>SPA терапия, релакс и прецизна грижа за стъпалата.</p>
+              <span>от 45 лв</span>
+            </div>
+          </article>
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?auto=format&fit=crop&w=900&q=80"
+              alt="Фризьорство"
+            />
+            <div>
+              <h3>Фризьорство</h3>
+              <p>Подстригване, боядисване, терапии за блясък и възстановяване.</p>
+              <span>от 50 лв</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="prices" class="section reveal">
+        <div class="section-header">
+          <h2>Цени</h2>
+          <p>Прозрачни пакети и персонални консултации.</p>
+        </div>
+        <div class="price-table">
+          <div class="price-row">
+            <span>Дамско подстригване</span>
+            <span>45 лв</span>
+          </div>
+          <div class="price-row">
+            <span>Боядисване + терапия</span>
+            <span>90 лв</span>
+          </div>
+          <div class="price-row">
+            <span>Мъжко подстригване + брада</span>
+            <span>35 лв</span>
+          </div>
+          <div class="price-row">
+            <span>Маникюр гел лак</span>
+            <span>40 лв</span>
+          </div>
+          <div class="price-row">
+            <span>Педикюр SPA</span>
+            <span>55 лв</span>
+          </div>
+          <div class="price-row">
+            <span>Официална прическа</span>
+            <span>70 лв</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" class="section reveal">
+        <div class="section-header">
+          <h2>Календар за запазване на час</h2>
+          <p>Изберете услуга, дата и час — потвърждение до 30 минути.</p>
+        </div>
+        <div class="booking">
+          <form id="booking-form" class="booking-form">
+            <label>
+              Име и фамилия
+              <input type="text" name="clientName" placeholder="Мария Петрова" required />
+            </label>
+            <label>
+              Телефон
+              <input type="tel" name="clientPhone" placeholder="+359 888 000 000" required />
+            </label>
+            <label>
+              Услуга
+              <select name="service" required>
+                <option value="">Изберете услуга</option>
+                <option>Фризьорство</option>
+                <option>Маникюр</option>
+                <option>Педикюр</option>
+                <option>Комбо: коса + нокти</option>
+              </select>
+            </label>
+            <label>
+              Дата
+              <input id="date-input" type="date" name="date" required />
+            </label>
+            <label>
+              Час
+              <input id="time-input" type="time" name="time" required />
+            </label>
+            <div class="times">
+              <span>Бърз избор</span>
+              <div class="time-buttons">
+                <button type="button" data-time="10:00">10:00</button>
+                <button type="button" data-time="12:30">12:30</button>
+                <button type="button" data-time="15:00">15:00</button>
+                <button type="button" data-time="17:30">17:30</button>
+                <button type="button" data-time="19:00">19:00</button>
+              </div>
+            </div>
+            <label>
+              Съобщение
+              <textarea name="note" rows="3" placeholder="Предпочитания, идея за цвят, алергии..."></textarea>
+            </label>
+            <button class="button" type="submit">Изпрати заявка</button>
+          </form>
+          <aside class="booking-summary">
+            <h3>Резюме на часа</h3>
+            <div class="summary-item">
+              <span>Услуга</span>
+              <strong id="summary-service">—</strong>
+            </div>
+            <div class="summary-item">
+              <span>Дата</span>
+              <strong id="summary-date">—</strong>
+            </div>
+            <div class="summary-item">
+              <span>Час</span>
+              <strong id="summary-time">—</strong>
+            </div>
+            <p class="summary-note">След подаване на заявка ще се свържем с вас за потвърждение.</p>
+            <div class="summary-contact">
+              <p>Телефон: +359 2 980 00 00</p>
+              <p>Адрес: бул. Витоша 118, София</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4>Studio Lume</h4>
+        <p>Бутиков салон за коса и нокти с персонализирани консултации.</p>
+      </div>
+      <div>
+        <h4>Работно време</h4>
+        <p>Понеделник – Събота: 09:00 – 20:30</p>
+        <p>Неделя: почивен ден</p>
+      </div>
+      <div>
+        <h4>Контакт</h4>
+        <p>hello@studiolume.bg</p>
+        <p>+359 2 980 00 00</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
